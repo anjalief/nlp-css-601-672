@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <meta property="og:site_name" content="EN.601.472/672: NLP for Computational Social Science">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="EN.601.472/672: NLP for Computational Social Science">
+    <meta property="og:description" content="Course on NLP and Social Science">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EN.601.472/672: NLP for Computational Social Science">
+
+    <title>EN.601.472/672: NLP for Computational Social Science </title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../files/bootstrap.min.css">
+
+    <!-- Google fonts -->
+    <link href="../files/fonts.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="../files/style.css">
+    <link rel="stylesheet" href="../files/font-awesome.min.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../files/favicon.ico"/>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1063.0" data-gr-ext-installed="">
+
+<!-- <script src="header.js"></script> -->
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand brand" href="index.html">601.472/672</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#intro">Overview</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#conduct">Policies</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<div id="header" style="text-align:center">
+    <!--    <img src="files/blank.png" class="logo-left">-->
+    <a href="https://www.cs.jhu.edu/">
+        <img src="../files/jhu_shield.png" class="logo-right">
+    </a>
+<!--    <a href="https://www.clsp.jhu.edu/">-->
+<!--        <img src="files/clsp-logo.png" class="logo-right">-->
+<!--    </a>-->
+    <h1>601.472/672: NLP for Computational Social Science</h1>
+    <h3>Johns Hopkins University - Spring 2025</h3>
+    <div style="clear:both;"></div>
+</div>
+
+<!-- Intro -->
+<div class="container sec" id="intro">
+    <p>
+        Vastly available digitized text data has created new opportunities for understanding social phenomena.
+        Relatedly, social issues like toxicity, discrimination, and propaganda frequently manifest in text, making text analyses
+        critical for understanding and mitigating them. In this course, we will centrally explore: how can we use NLP as a tool for
+        understanding society? Students will learn core and recent advances in text-analysis methodology, building from word-level
+        metrics to embeddings and language models as well as incorporating statistical methods such as time series analyses and causal
+        inference.
+    </p>
+
+    <p>
+        <strong>Prerequisites</strong>:
+        Pre-reqs: one of (EN.601.465/665, EN.601.467/667, EN.601.468/668) and familiarity with Python/PyTorch.
+        Students may receive credit for EN.601.472 or EN.601.672, but not both.
+    </p>
+
+</div>
+
+<!-- Staff Info -->
+<div class="sechighlight">
+    <div class="container sec" id="people">
+        <div class="col-md-5" style="width: 100%; text-align: center">
+            <h3>Instructors</h3>
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="https://anjalief.github.io/">
+                    <div class="instructorphoto"><img src="files/anjalie.jpg" alt="missing image"></div>
+                    <div>Anjalie Field <br> <br></div>
+                </a>
+            </div>
+
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="">
+                    <div class="instructorphoto"><img src="files/samuel.jpeg" alt="missing image"></div>
+                    <div>Samuel Lefcourt <br>(Teaching Assistant)</div>
+                </a>
+            </div>
+
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="">
+                    <div class="instructorphoto"><img src="files/Colin.png" alt="missing image"></div>
+                    <div>Yuanhao (Colin) Liu <br>(Teaching Assistant)</div>
+                </a>
+            </div>
+
+
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="">
+                    <div class="instructorphoto"><img src="files/shreya.jpg" alt="missing image"></div>
+                    <div>Shreya Sharma <br>(Course Assistant)</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Logistics -->
+    <div class="container sec" id="logistics">
+        <ul>
+            <li><b>Classes:</b> on Monday/Wednesday 1:30 - 2:45 pm EST (Shaffer 2)</li>
+            <li><b>Office hours:</b>
+                <ul>
+                    <li>Anjalie: Wednesday 3-4pm (Malone 333)</li>
+                    <li>Samuel: Monday 9-10am (Malone 216)</li>
+                    <li>Shreya: Wednesday 5:30-6:30pm (Malone 216)</li>
+                </ul>
+            </li>
+
+            <li><b>Logistics:</b>
+                <ul>
+                    <li>Please join the class <a href="https://piazza.com/jhu/spring2024/601472672">Piazza</a></li>
+                    <li>Assignments will be submitted via Canvas/Gradescope</li>
+                </ul>
+            </li>
+
+            <li><b>Coursework:</b>
+            <ul>
+                <li>Lectures: Course material will be taught through in class lectures. Students are expected to attend class in person and participate. There will additionally be
+                    guest lectures from social scientists through the semester.
+                </li>
+                
+                <li>Homeworks: There will be 4 homework assignments and a 5th extended HW / project on the following topics:
+                    <li>
+            <ul>
+                <li>
+                    HW 1: Word-level statistics and embeddings
+                    <ul>
+                        <li>Release Date: </li>
+                        <li>Due Date: </li>
+                    </ul>
+                </li>
+                <li>
+                    HW 2: Data annotation
+                    <ul>
+                        <li>Release Date: </li>
+                        <li>Due Date: </li>
+                    </ul>
+                </li>
+                <li>
+                    HW 3: Causal Inference
+                    <ul>
+                        <li>Release Date: </li>
+                        <li>Due Date: /li>
+                    </ul>
+                </li>
+                <li> Project Proposal 
+                    <ul>
+                    <li> Due Date: </li>
+                    </ul>
+                <li>
+                    HW 4: LLMs
+                    <ul>
+                        <li>Release Date: </li>
+                        <li>Due Date: </li>
+                    </ul>
+                </li>
+                <li>
+                    HW 5 (Project): Open-ended corpus analysis
+                    <ul>
+                        <li>Due Date: </li>
+                    </ul>
+                </li>
+            </ul>
+            Most HWs will be primarily coding assignments (Python) with some additional components. HW 2 and 5 will be done in groups. HW 1, 3, and 4 are individual assignments.
+            Students are permitted to discuss assignments with each other at a high level, but work turned in is expected to be completed individually. Further course policies
+            are specified at the bottom of the page. Homeworks will be turned in using GradeScope.
+                </li>
+
+                    Most HWs will be primarily coding assignments (Python) with some additional components. HW 2 and 5 will be done in groups. HW 1, 3, and 4 are individual assignments.
+                    Students are permitted to discuss assignments with each other at a high level, but work turned in is expected to be completed individually. Further course policies
+                    are specified at the bottom of the page. Homeworks will be turned in using GradeScope.
+                </li>
+            </ul>
+
+            <li><b>Grading:</b>
+                <ul>
+                    <li> Homeworks 1-4 (45%) </li>
+                    <li> Homework 5 (25%) </li>
+                    <li> In-class midterm (25%) </li>
+                    <li> Course surveys and participation (5%) </li>
+                </ul>
+        </ul>
+
+
+        <br>
+    </div>
+</div>
+
+<div class="container sec" id="schedule" style="margin-top:-20px">
+    <br>
+    <h2>Schedule</h2>
+    <p> The current class schedule is below. The schedule is subject to change: </p>
+
+    <table class="table">
+        <colgroup>
+            <col style="width:10%">
+            <col style="width:18%">
+            <col style="width:60%">
+            <col style="width:25%">
+
+        </colgroup>
+        <thead>
+        <tr class="active">
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Reference Readings</th>
+            <th>Work Due</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Wed Jan 22</td>
+            <td>Introduction, course expectations</td>
+        </tr>
+        <!-- <tr>
+            <td>Wed Jan 24</td>
+            <td>Word statistics [<a href="files/0124.LogOdds.pdf">slides</a>]</td>
+            <td>
+                <ol>
+
+                    <li><a href="https://languagelog.ldc.upenn.edu/myl/Monroe.pdf"> Monroe et al. "Fightin’ Words: Lexical Feature Selection and Evaluation for Identifying the Content of Political Conflict", Political Analysis (2008)</a></li>
+                    <li><a href="https://web.stanford.edu/~jurafsky/slp3/">Jurafsky and Martin, Speech and Language Processing, 3rd ed (2023) [Sec 6.6]</a></li>
+               </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Mon Jan 29</td>
+            <td>Topic Modeling [<a href="files/0129.LDA.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf"> Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." Journal of machine Learning research 3.Jan (2003): 993-1022.</a> </li>
+                    <li><a href="https://bstewart.scholar.princeton.edu/sites/g/files/toruqf4016/files/bstewart/files/stmnips2013.pdf">Roberts, Margaret E., et al. "The structural topic model and applied social science." Advances in neural information processing systems workshop on topic models: computation, application, and evaluation. Vol. 4. No. 1. 2013</a></li>
+                </ol>
+            </td>
+            <td>Submit course goals form linked on Piazza</td>
+        </tr>
+
+        <tr>
+            <td>Wed Jan 31</td>
+            <td>Word Embeddings: Construction [<a href="files/0131.WordEmbeddingsConstruction.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://arxiv.org/abs/1301.3781"> Mikolov, Tomas, et al. "Efficient estimation of word representations in vector space." </a> </li>
+                    <li><a href="https://proceedings.neurips.cc/paper_files/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf">Mikolov, Tomas, et al. "Distributed representations of words and phrases and their compositionality." NeuRIPS (2013).</a></li>
+                </ol> 
+            </td>
+            <td> HW 1 Released </td>
+        </tr>
+
+        <tr>
+            <td>Mon Feb 5</td>
+            <td>Word Embeddings: Applications and Evaluations [<a href="files/0205.WordEmbeddingsApplications.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://arxiv.org/abs/1607.06520">Bolukbasi, Tolga, et al. "Man is to computer programmer as woman is to homemaker? Debiasing word embeddings." NeuRIPS (2016).</a></li>
+                    <li><a href="https://aclanthology.org/P16-1141/">Hamilton, William L., Jure Leskovec, and Dan Jurafsky. "Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change." ACL (2016).</a></li>
+                    <li><a href="https://www.pnas.org/doi/full/10.1073/pnas.1720347115">Garg, Nikhil, et al. "Word embeddings quantify 100 years of gender and ethnic stereotypes." PNAS (2018)</a></li>
+                    <li><a href="https://aclanthology.org/2020.acl-main.405/">Joseph, Kenneth, and Jonathan Morgan. "When do Word Embeddings Accurately Reflect Surveys on our Beliefs About People?." ACL (2020).</a></li>
+                </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Feb 7</td>
+            <td>Affect and Lexicons [<a href="files/0207.AffectLexicons.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href=>Giovanna Colombetti. "From affect programs to dynamical discrete emotions", Philosophical Psychology (2009).</a></li>
+                    <li><a href="https://aclanthology.org/P18-1017/"> Saif M. Mohammad. "Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words>" ACL (2018)</a></li>
+                    <li><a href="https://aclanthology.org/D16-1057/">Hamilton, William L., et al. "Inducing domain-specific sentiment lexicons from unlabeled corpora." EMNLP. (2016)</a></li>
+                </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Mon Feb 12</td> 
+            <td>Data annotating [<a href="files/0212.AnnotatingData.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                <li><a href="https://aclanthology.org/W16-5618/">Zeerak Waseem. "Are You a Racist or Am I Seeing Things? Annotator Influence on Hate Speech Detection on Twitter". In Proceedings of the First Workshop on NLP and Computational Social Science at ACL (2016)</a></li>
+                <li><a href="https://aclanthology.org/D19-1176/">Luke Breitfeller, Emily Ahn, David Jurgens, and Yulia Tsvetkov. "Finding Microaggressions in the Wild: A Case for Locating Elusive Phenomena in Social Media Posts". In EMNLP (2019)</a></li>
+                </a></li>
+                <li><a href="https://slideslive.com/39004357/reinforcement-learning-from-human-feedback-a-tutorial-?ref=search-presentations-reinforcement+learning+from+human+feedback">ICML 2023 tutorial on RLHF</a></li>
+                </ol>
+            </td>
+            <td><s>HW 1 due</s> HW 2 released</td>
+        </tr>
+
+        <tr>
+            <td>Wed Feb 14</td>
+            <td>Class cancelled</td>
+            <td></td>
+            <td>
+                HW 1 due
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mon Feb 19</td>
+            <td>Classification Models [<a href="files/0214.ClassificationModels.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">Jurafsky & Martin Chap. 5</a></li>
+                    <li><a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">Jurafsky & Martin Chap. 7</a></li>
+                    <li><a href="https://aclanthology.org/D18-1487/">Keith, Katherine, and Brendan O’Connor. "Uncertainty-aware generative models for inferring document class prevalence." EMNLP (2018)</a></li>
+                </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Feb 21</td>
+            <td>Hypothesis testing; Causal inference: Definitions [<a href="files/02.21.HypothesisTesting.pdf">slides</a>]</td>
+            <td></td>
+            <td>
+                HW 2 due
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mon Feb 26</td>
+            <td>Guest Lecture from Adam Koon [<a href="files/0226.QualitativeFraming.pdf">slides</a>]</td>
+            <td>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Feb 28</td>
+            <td>Causal inference: Adjustments [<a href="files/0228.CausalInference.pdf">slides</a>]</td>
+                <td>
+                    <ol>
+                        <li><a href="https://www.bradyneal.com/Introduction_to_Causal_Inference-Dec17_2020-Neal.pdf">Brady Neal, “Introduction to Causal Inference from a Machine Learning Perspective”, Course Lecture Notes, Chapter 2</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2943670/">Stuart EA. Matching methods for causal inference: A review and a look forward. Stat Sci. 2010 Feb 1;25(1):1-21. doi: 10.1214/09-STS313</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/35035932/">Chesnaye NC, Stel VS, Tripepi G, Dekker FW, Fu EL, Zoccali C, Jager KJ. An introduction to inverse probability of treatment weighting in observational research. Clin Kidney J. 2021 Aug 26;15(1):14-20. doi: 10.1093/ckj/sfab158</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3144483/">Austin PC. An Introduction to Propensity Score Methods for Reducing the Effects of Confounding in Observational Studies. Multivariate Behav Res. 2011 May;46(3):399-424. doi: 10.1080/00273171.2011.568786. </a></li>
+                    </ol>
+                </td>
+            </td>
+            <td>HW 3 released</td>
+        </tr>
+
+        <tr>
+            <td>Mon Mar 4</td>
+            <td>Causal inference: Text and NLP [<a href="files/0304.CausalInferenceNLP.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://aclanthology.org/2020.acl-main.474/">Keith, Katherine, David Jensen, and Brendan O’Connor. "Text and Causal Inference: A Review of Using Text to Remove Confounding from Causal Estimates." ACL. 2020.</a></li>
+                    <li><a href="https://www.mit.edu/~rnielsen/textmatching.pdf">Roberts, Margaret E., Brandon M. Stewart, and Richard A. Nielsen. "Adjusting for confounding with text matching." American Journal of Political Science 64.4 (2020): 887-903.</a></li>
+                    <li><a href="https://proceedings.mlr.press/v124/veitch20a/veitch20a.pdf">Veitch, Victor, Dhanya Sridhar, and David Blei. "Adapting text embeddings for causal inference." Conference on Uncertainty in Artificial Intelligence. PMLR, 2020.</a></li>
+                    <li><a href="https://aclanthology.org/2020.emnlp-main.44/">Field, Anjalie, and Yulia Tsvetkov. "Unsupervised Discovery of Implicit Gender Bias." Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020.</a></li>      
+                </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Mar 6</td>
+            <td>Network metrics [<a href="files/0306.Networkmetrics.pdf">slides</a>] </td>
+            <td>
+                <ol>
+                    <li><a href="https://dl.acm.org/doi/10.1145/2939672.2939754">Grover, A., & Leskovec, J. (2016, August). node2vec: Scalable feature learning for
+                        networks. In Proceedings of the 22nd ACM SIGKDD international conference on
+                        Knowledge discovery and data mining (pp. 855-864).</a></li>
+                     <li> <a href="https://openreview.net/pdf?id=ryGs6iA5Km">Xu, K., Hu, W., Leskovec, J., & Jegelka, S. (2018). How powerful are graph neural
+                        networks?. ICLR (2019).</a></li>
+                    <li><a href="https://www.computer.org/csdl/journal/tp/2023/05/09875989/1GqajxgkWcM">Yuan, H., Yu, H., Gui, S., & Ji, S. (2022). Explainability in graph neural networks: A
+                        taxonomic survey. IEEE transactions on pattern analysis and machine intelligence,
+                        45(5), 5782-5799.</a></li>
+
+                    </li>
+                </ol>
+            </td>
+            <td><s>HW3 Due Friday 3/8</s></td>
+        </tr>
+
+        <tr>
+            <td>Mon Mar 11</td>
+            <td>Midterm Review [<a href="files/0311.MidtermReview.pdf">slides</a>] </td>
+            <td>
+            </td>
+            <td></td>
+        </tr>
+
+
+        <tr>
+            <td>Wed Mar 13</td>
+            <td>Midterm</td>
+            <td>
+            </td>
+            <td>HW3 Due Friday 3/15</td>
+        </tr>
+
+
+        <tr>
+            <td>Mon Mar 18</td>
+            <td>BREAK</td>
+            <td>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Mar 20</td>
+            <td>BREAK</td>
+            <td>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Mon Mar 25</td>
+            <td>Ethics [<a href="files/0325.Ethics.pdf">slides</a>] </td>
+            <td>
+                <ol>
+                    <li><a href="https://dl.acm.org/doi/abs/10.1145/3593013.3594095">Bianchi, Federico, et al. "Easily accessible text-to-image generation amplifies demographic stereotypes at large scale." FAccT. 2023.</a></li>
+                    <li><a href="https://aclanthology.org/P19-1163/"> Sap, Maarten, et al. "The Risk of Racial Bias in Hate Speech Detection." ACL. 2019</a></li>
+                    <li><a href="https://aclanthology.org/2020.acl-main.485/">Blodgett, Su Lin, et al. "Language (Technology) is Power: A Critical Survey of “Bias” in NLP" ACL. 2020</a></li>
+                </ol>
+            </td>
+            <td>Project Proposal Released</td>
+        </tr>
+        
+        <tr>
+            <td>Wed Mar 27</td>
+            <td>Language Modeling (Background) [<a href="files/0327.LLMsIntro.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://web.stanford.edu/~jurafsky/slp3/">Jurafsky and Martin, Speech and Language Processing, 3rd ed (2023) [Sec 3]</a></li>
+                    <li><a href="https://web.stanford.edu/~jurafsky/slp3/">Jurafsky and Martin, Speech and Language Processing, 3rd ed (2023) [Sec 7.6]</a></li>
+                </ol>
+                
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Mon Apr 1</td>
+            <td>"Mapping the Modern Agora and Other Applications to Dilemmas in Democracy" with guest <a href="https://www.hahriehan.com/">Hahrie Han</a></td>
+            <td>
+                <ol>
+                    <li><a href="https://doi.org/10.1038/s41562-023-01743-1">de Vries, M., Kim, J.Y. & Han, H. The unequal landscape of civic opportunity in America. Nature Human Behavior 8, 256–263 (2024).</a></li>
+                </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Apr 3</td>
+            <td>Language Modeling: MLM Use Cases [<a href="files/0403.MLMUses.pdf">slides</a>] </td>
+            <td><ol>
+                <li><a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a> </li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/35905322/">Card, Dallas, et al. "Computational analysis of 140 years of US political speeches reveals more positive but increasingly polarized framing of immigration." Proceedings of the National Academy of Sciences 119.31 (2022)</a></li>
+                <li><a  href="https://aclanthology.org/2024.eacl-long.49/">Myra Cheng, et al. "AnthroScore: A Computational Linguistic Measure of Anthropomorphism" EACL (2024).</a></li>
+            </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Mon Apr 8</td>
+            <td>History Applications (with Louis Hyman and Sam Backer)</td>
+            <td>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Apr 10</td>
+            <td>Language Modeling: Neural Topic Models [<a href="files/0410.NeuralTopicModels.pdf">slides</a>] </td>
+            <td>
+                <ol>
+                    <li><a href="https://aclanthology.org/2021.acl-short.96/">Bianchi, F., Terragni, S., & Hovy, D. (2021). Pre-training is a Hot Topic: Contextualized Document Embeddings Improve Topic Coherence. ACL.</a></li>
+                    <li><a href="https://arxiv.org/abs/2203.05794">Grootendorst, Maarten. "BERTopic: Neural topic modeling with a class-based TF-IDF procedure." arXiv preprint arXiv:2203.05794 (2022).</a></li>
+                    <li><a href="https://arxiv.org/abs/2311.01449">Pham, Chau Minh, et al. "TopicGPT: A prompt-based topic modeling framework." NAACL (2024).</a></li>
+                </ol>
+            </td>
+            <td>HW 4 Released (Due April 19)</td>
+        </tr>
+
+        <tr>
+            <td>Mon Apr 15</td>
+            <td>Language Modeling: Prompting [<a href="files/0415.Prompting.pdf">slides</a>] </td>
+            <td>
+                <ol>
+                    <li><a href="https://arxiv.org/pdf/2305.03514.pdf">Can Large Language Models Transform Computational Social Science?
+                        Caleb Ziems, William Held, Omar Shaikh, Jiaao Chen, Zhehao Zhang, and Diyi Yang Computational linguistics, Mar 2024</a></li>
+                    <li><a href="https://arxiv.org/abs/2005.14165">Brown et al. "Language Models are Few-Shot Learners", 2020 </a></li>
+                </ol>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Apr 17</td>
+            <td>Language Modeling: AI for Social Experiments with <a href="https://www.ziangxiao.com/">Ziang Xiao</a></td>
+            <td>
+                <ol>
+                    <li><a href="https://academic.oup.com/qje/article/139/2/751/7515309?login=true">Ludwig and Mullainathan (2023) "Machine learning as a tool for hypothesis generation". The Quarterly Journal of Economics</a></li>
+
+                    <li><a href="files/Can_Generative_AI_Improve_Social_Science_Preprint_October_2023.pdf">Christopher Bail (2023) "Can generative AI improve social science?"</a></li>
+                        
+                    <li><a href="https://dl.acm.org/doi/10.1145/3381804">Xiao et. al. (2020)  "Tell Me About Yourself: Using an AI-Powered Chatbot to Conduct Conversational Surveys with Open-ended Questions" ACM Transactions on Computer-Human Interaction</a></li>
+
+                    </li>
+                </ol>
+            </td>
+            <td> HW 4 due (on April 9)</td>
+        </tr>
+
+        <tr>
+            <td>Mon Apr 22</td>
+            <td>Sociology Applications [<a href="files/0422.CSSsociology.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://journals.sagepub.com/doi/full/10.1177/0003122418797576">Goldberg, A., & Stein, S. K. (2018). Beyond social contagion: Associative diffusion and the emergence of cultural variation. American Sociological Review, 83(5), 897-932.</li></a>
+                    <li><a href="https://arxiv.org/abs/1803.09288">Kozlowski, A. C., Taddy, M., & Evans, J. A. (2019). The geometry of culture: Analyzing the meanings of class through word embeddings. American Sociological Review, 84(5), 905-949.</li></a>
+                    <li><a href="https://www.pnas.org/doi/full/10.1073/pnas.2108801119">Arseniev-Koehler, A., Cochran, S. D., Mays, V. M., Chang, K. W., & Foster, J. G. (2022). Integrating topic modeling and word embedding to characterize violent deaths. Proceedings of the National Academy of Sciences, 119(10), e2108801119.</li></a>
+                    <li><a href="https://www.cambridge.org/core/journals/american-political-science-review/article/embedding-regression-models-for-contextspecific-description-and-inference/4C90013E5C714C8483ED95CC699022FB">Rodriguez, P. L., Spirling, A., & Stewart, B. M. (2023). Embedding regression: Models for context-specific description and inference. American Political Science Review, 117(4), 1255-1274.</li></a>
+                </ol>
+                
+
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Wed Apr 24</td>
+            <td>Language Modeling: Social Simulations [<a href="files/0424.LLMsSocialExperiments.pdf">slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://dl.acm.org/doi/abs/10.1145/3526113.3545616">Park, Joon Sung, et al. "Social simulacra: Creating populated prototypes for social computing systems." Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology. 2022.</a></li>
+                    <li><a href="https://dl.acm.org/doi/fullHtml/10.1145/3586183.3606763">Park, Joon Sung, et al. "Generative agents: Interactive simulacra of human behavior." Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology. 2023.</a></li>
+                    <li><a href="https://dl.acm.org/doi/10.5555/3618408.3618425">Gati Aher, Rosa I. Arriaga, Adam Tauman Kalai (2023) “Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies”, ICLR
+                    </a></li>
+
+                </ol>
+            </td>
+            <td></td>
+        </tr> -->
+        </tbody>
+    </table>
+</div> 
+
+
+<div class="container sec" id="conduct">
+    <h2>Policies</h2>
+    <p><b>Late Days</b>
+    Each student can use 5 late days for HW assignments over the course of the semester. Late days can be distributed in any way accross assignments. 
+    Additional extensions will not be granted, and work turned in late after all late days have been used will receive 0 credit. If a group assignment is turned in late, it will count 
+    as a late day for all students in the group.  Late days <b>cannot</b> be used for the final project (e.g. HW 5) report.
+
+    <p><b>Course Conduct</b>
+        This course includes topics that could raise differing opinions. All students are expected to respect everyone's perspective and input
+        and to contribute towards creating a welcoming and inclusive climate.
+        We the instructors will strive to make this classroom an inclusive space for all students, and we welcome feedback
+        on ways to improve.
+    </p>
+    <p>
+        <b>Academic Integrity</b>
+        This course will have a zero-tolerance philosophy regarding <a
+            href="https://www.cs.jhu.edu/academic-programs/academic-integrity-code/">plagiarism or other forms of
+        cheating</a>, and incidents
+        of academic dishonesty will be reported. A student who has doubts about how the Honor Code applies to this
+        course should obtain specific guidance from the course instructor before submitting the respective assignment.
+    </p>
+    <p>
+        <b>Discrimination and Harrasment</b>
+        The Johns Hopkins University is committed to equal opportunity for its faculty, staff, and students.
+        To that end, the university does not discriminate on the basis of sex, gender, marital status, pregnancy, race, color, ethnicity, national origin, age, disability, religion, sexual orientation, gender identity or expression, veteran status, military status, immigration status or other legally protected characteristic.
+        The University's <a href="https://oie.jhu.edu/policies-and-laws/JHU-Discrimination-and-Harassment-Policy-and-Procedures-7.1.21-Present">Discrimination and Harassment Policy and Procedures</a> provides information on how to report or file a complaint of discrimination or harassment based on any of the protected statuses listed in the earlier sentence, and the University’s prompt and equitable response to such complaints.
+    </p>
+
+    <p>
+        <b>Personal Well-being</b>
+        Take care of yourself! Being a student can be challenging and your physical and mental health is important. If you need support,
+        please seek it out. Here are several of the many helpful resources on campus:
+        <ul>
+            <li><a href="https://studentaffairs.jhu.edu/student-health/">Student Health and Wellness Center</a></li>
+            <li><a href="https://studentaffairs.jhu.edu/counselingcenter/">JHU Counseling Center</a></li>
+            <li><a href="http://web.jhu.edu/disabilities/">JHU Office for Student Disability Services</a></li>
+            <li><a href="https://studentaffairs.jhu.edu/student-life/student-outreach-support/">Student Outreach & Support</a></li>
+        </ul>
+    </p>
+</div>
+
+<div>
+    <b>Acknowledgements</b>
+    Thank you Daniel Khashabi for sharing the course website template!
+</div>
+
+
+<!-- jQuery and Bootstrap -->
+<script src="../files/jquery.min.js"></script>
+<script src="../files/bootstrap.min.js"></script>
+
+
+</body>
+</html>
